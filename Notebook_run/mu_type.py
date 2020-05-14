@@ -5,20 +5,6 @@ Created on Wed Feb  8 19:13:19 2017
 @author: debora
 """
 
-from itertools import chain
-
-def choose_mu_type(soma,dend):
-    mutype = raw_input('S, FR or FF: ')
-    if mutype == "S":
-        print ('slow twitch')
-        mus(soma,dend)
-    elif mutype == "FR":
-        print ('fast twitch, fatigue resistant')
-        mufr(soma,dend)
-    elif mutype == "FF":
-        print ('fast twitch, fatigable')
-        muff(soma,dend)
-
 def mus(soma,dend):
     # soma parameters
     soma.L = 80
@@ -56,39 +42,39 @@ def mus(soma,dend):
 
 
 def mufr(soma,dend):
-        # soma parameters
-        soma.L = 85
-        soma.nseg = 1
-        soma.diam = 85
-        soma.Ra = 70.0
-        soma.cm = 1.0
+    # soma parameters
+    soma.L = 85
+    soma.nseg = 1
+    soma.diam = 85
+    soma.Ra = 70.0
+    soma.cm = 1.0
 
-        soma.gnabar_napp = 0.07
-        soma.gnapbar_napp = 0.0008
-        soma.gkfbar_napp = 0.0040
-        soma.gksbar_napp = 0.037
-        soma.mact_napp= 17.0
-        soma.rinact_napp = 0.058
-        soma.ena = 120.0
-        soma.ek = -10.0
-        soma.el_napp = 0.0
-        soma.vtraub_napp = 0.0
-        soma.gl_napp = 1/1000.0
+    soma.gnabar_napp = 0.07
+    soma.gnapbar_napp = 0.0008
+    soma.gkfbar_napp = 0.0040
+    soma.gksbar_napp = 0.037
+    soma.mact_napp= 17.0
+    soma.rinact_napp = 0.058
+    soma.ena = 120.0
+    soma.ek = -10.0
+    soma.el_napp = 0.0
+    soma.vtraub_napp = 0.0
+    soma.gl_napp = 1/1000.0
 
-        # dendrite parameters
-        dend.L = 7450.0
-        dend.nseg = 1
-        dend.diam = 73
-        dend.Ra = 70.0
-        dend.cm = 1.0
-        
-        dend.gcaLbar_caL = 0.000007
-        dend.ecaL = 140
-        dend.vtraub_caL = 35.6
-        dend.gama_caL = 1
-        dend.Ltau_caL = 46
-        dend.gl_caL = 1/8825.0
-        dend.el_caL = 0.0
+    # dendrite parameters
+    dend.L = 7450.0
+    dend.nseg = 1
+    dend.diam = 73
+    dend.Ra = 70.0
+    dend.cm = 1.0
+
+    dend.gcaLbar_caL = 0.000007
+    dend.ecaL = 140
+    dend.vtraub_caL = 35.6
+    dend.gama_caL = 1
+    dend.Ltau_caL = 46
+    dend.gl_caL = 1/8825.0
+    dend.el_caL = 0.0
 
 
 def muff(soma,dend):
