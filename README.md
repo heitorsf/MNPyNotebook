@@ -32,8 +32,8 @@ If you are using a Linux machine, use:
 
 Follow the link that will be prompted on the screen.
 
-4) So, please enter the folder "Notebook_run" and run the Jupyter Notebook script (CBEB_2020_2.ipynb). You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
+4) So, please enter the folder "Notebook_run" and run the Jupyter Notebook script ("CBEB_2020_2.ipynb"). You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
 
-5) For an example of the study with the tool, please read the scientific comunication submit to the XXVII Brazilian Congress in Biomedical Engineering - CBEB 2020 (DECM_HSF_LAE_CBEB2020.pdf).
+5) For an example of the study with the tool, please read the scientific communication submit to the XXVII Brazilian Congress in Biomedical Engineering - CBEB 2020 ("DECM_HSF_LAE_CBEB2020.pdf").
 
-6) To finish your experience with the tool, with is comfortable for you, please make a test and answer the usability survey to help us understand the usability of the interactive tool developed.
+6) To finish your experience with the tool, if it is comfortable for you, please make a test and answer the usability survey to help us understand the usability of the interactive tool developed.
