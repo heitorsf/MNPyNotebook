@@ -5,6 +5,8 @@
 
 The developed interactive model utilizes Jupyter Notebook with the NEURON simulator in Python and the environment can be easily set through Docker (which is an open source containerizing tool).
 
+## Using the tool
+
 1) First of all, we give you two options for using docker:
     - Installing Docker in your computer following the instructions presented at the Docker website:
       https://docs.docker.com/engine/install/
