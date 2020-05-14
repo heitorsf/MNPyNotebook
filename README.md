@@ -1,5 +1,4 @@
-# CBEB_2020
-New version
+# An interactive tool to study motor neuron electrophysiology aspects at healthy and at disease conditions 
 
 
 Researchers have sought both computational and experimental approaches to study the motor neuron electrophysiology aspects. Nonetheless, understanding how the individual MN characteristics influence the firing properties is a difficult task. Thus, the objective of this study is to propose an interactive Jupyter notebook as a computational alternative to simulate how the MN firing properties are influenced by changes in monoaminergic drive and, biophysical and morphological MN characteristics. The proposed model also allows studies related to amyotrophic lateral sclerosis (ALS), since increases in L-type calcium conductances (gCaL) are observed during the progression of this disease and are related to MN bistability. A monoaminergic decrease observed in patients with spinal cord injury can also be simulated, consisting of another example of the exploration with this tool.
