@@ -5,7 +5,7 @@
 
 The developed interactive model utilizes Jupyter Notebook with the NEURON simulator in Python and the environment can be easily set through Docker (which is an open source containerizing tool).
 
-## Using the tool
+## Using Docker environment
 
 1) First of all, we give you two options for using docker:
     - Installing Docker in your computer following the instructions presented at the Docker website:
@@ -33,8 +33,13 @@ If you are using a Linux machine, use:
 
 Follow the link that will be prompted on the screen.
 
-4) So, please enter the folder "Notebook_run" and run the Jupyter Notebook script ("CBEB_2020_2.ipynb"). You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
+## Using the tool
 
-5) For an example of the study with the tool, please read the scientific communication submit to the XXVII Brazilian Congress in Biomedical Engineering - CBEB 2020 ("DECM_HSF_LAE_CBEB2020.pdf").
+Please enter the folder "Notebook_run" and run the Jupyter Notebook script ("CBEB_2020_2.ipynb"). You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
 
-6) To finish your experience with the tool, if it is comfortable for you, please take a short test present at the link: https://docs.google.com/forms/d/1YYfg_csWUCQQs_RUqjEU8fQO1kmzd5DI2lANDz3ksYE/edit and answer the usability survey to help us to understand the usability of the interactive tool developed.
+## An application example
+
+For an example of the study with the tool, please read the scientific communication submit to the XXVII Brazilian Congress in Biomedical Engineering - CBEB 2020 ("DECM_HSF_LAE_CBEB2020.pdf").
+
+## Usability survey
+To finish your experience with the tool, if it is comfortable for you, please take a short test present at the link: https://docs.google.com/forms/d/1YYfg_csWUCQQs_RUqjEU8fQO1kmzd5DI2lANDz3ksYE/edit and answer the usability survey to help us to understand the usability of the interactive tool developed.
