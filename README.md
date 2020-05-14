@@ -36,3 +36,4 @@ Follow the link that will be prompted on the screen.
 
 5) For an example of the study with the tool, please read the scientific comunication submit to the XXVII Brazilian Congress in Biomedical Engineering - CBEB 2020 (DECM_HSF_LAE_CBEB2020.pdf).
 
+6) To finish your experience with the tool, with is comfortable for you, please make a test and answer the usability survey to help us understand the usability of the interactive tool developed.
