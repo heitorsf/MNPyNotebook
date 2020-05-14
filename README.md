@@ -31,4 +31,5 @@ If you are using a Linux machine, use:
 
 Follow the link that will be prompted on the screen.
 
-4) So, please enter the folder "Notebook run". 
+4) So, please enter the folder "Notebook_run" and run the Jupyter Notebook script (CBEB_2020_2.ipynb). You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
+
