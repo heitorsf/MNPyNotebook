@@ -11,10 +11,10 @@ RUN pip install -r config/requirements.txt
 RUN cd /work/nrn-7.4/src/nrnpython \
     python setup.py install
 RUN chown -R neuron /work
-RUN nrnivmodl /work/Notebook_run
+RUN cd /work/Notebook_run \ 
+    nrnivmodl
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 EXPOSE 8888
 USER neuron
-RUN nrnivmodl Notebook_run/
 CMD jupyter notebook
