@@ -16,4 +16,4 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 EXPOSE 8888
 USER neuron
-CMD jupyter notebook
+CMD nrnivmodl && jupyter notebook
