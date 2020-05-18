@@ -8,7 +8,8 @@ COPY Notebook_run/* /work/Notebook_run/
 COPY requirements.txt /work/config/
 
 RUN pip install -r config/requirements.txt
-RUN python /work/nrn-7.4/src/nrnpython/setup.py install
+RUN cd /work/nrn-7.4/src/nrnpython \
+    python setup.py install
 RUN chown -R neuron /work
 RUN nrnivmodl /work/Notebook_run
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
