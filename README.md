@@ -44,7 +44,7 @@ Once in the Jupyter Notebook, please enter the folder "Notebook_run" and run the
 
 ## An application example
 
-For an example of the study with the tool, please follow the step in the read the script (**CBEB_2020_2.ipynb**) along with the scientific communication submited to the XXVII Brazilian Congress in Biomedical Engineering - CBEB 2020 (**DECM_HSF_LAE_CBEB2020.pdf**).
+For an example of the study with the tool, please follow the steps in the script (**CBEB_2020_2.ipynb**) along with the scientific communication submited to the XXVII Brazilian Congress in Biomedical Engineering - CBEB 2020 (**DECM_HSF_LAE_CBEB2020.pdf**).
 
 ## Usability survey
 To finish your experience with the tool, if it is comfortable for you, please take a short test and answer the survey to help us understanding the usability of the interactive tool developed: https://docs.google.com/forms/d/e/1FAIpQLSewYiuRmT3B4MQd9LP9WRLqW_YjXODcE8oNQ5yBcn8wdMK2Ag/viewform
