@@ -18,7 +18,7 @@ First of all, we give you two options for using docker:
 
 If you are using the Docker Lab Environment, add a new instance and run the following line in the terminal:
 
-                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo
+                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:cbeb_2020
 
 Wait until it is done and a link will be prompted at the terminal, it will look like this:
 
@@ -30,11 +30,11 @@ Please select and copy the characters after 'token='. Then, click at the 8888 li
 
 If you have installed Docker in your computer, run locally the following line in a command terminal:
 
-                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo
+                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:cbeb_2020
 
 If you are using a Linux machine, use:
 
-                                    $ sudo docker run -it -p 8888:8888 28102018/decm_first_repo
+                                    $ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:cbeb_2020
 
 Follow the link that will be prompted on the screen.
 
