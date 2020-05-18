@@ -1,13 +1,8 @@
-from itertools import chain
-import os
 import sys
 import neuron as nrn
 import mu_type
 import numpy as np
 from scipy.signal import argrelextrema
-from ipywidgets import FloatSlider
-from scipy.optimize import leastsq
-from IPython.display import display
 from matplotlib import pyplot
       
 
@@ -52,7 +47,7 @@ t_vec = nrn.h.Vector()
 dend.connect(soma, 0, 1)
 # soma mechanisms
 soma.insert('napp')
-## dendrite mechanisms
+# dendrite mechanisms
 dend.insert('caL')
 
 stimtest = nrn.h.iTest(0.5, sec=soma)
@@ -120,10 +115,8 @@ if len(spikes) > 1:
 elif len(spikes) == 1:
     print (maxima_volt)
     print (maxima_time)
-    print ('apenas um PA, frequencia = ?')
 
 else:
-    print ('pulso sublimiar')
     print (maxima_volts)
     print (maxima_volts*0.63)
     print (maxima_times)
@@ -154,7 +147,7 @@ pyplot.tight_layout(0.1)
 
 spikes=len(spikes)
 import pandas as pd
-df2 = pd.DataFrame({'freqency':np.mean(freq),
+df2 = pd.DataFrame({'frequency':np.mean(freq),
                     'spikes':[spikes]})
-df2.to_csv('pulse_injection_results.csv', index=False)
+df2.to_csv('pulse_injection.csv', index=False)
 pyplot.savefig('pulse_injection.png')

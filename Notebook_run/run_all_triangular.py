@@ -1,13 +1,8 @@
-from itertools import chain
-import os
 import sys
 import neuron as nrn
 import mu_type
 import numpy as np
 from scipy.signal import argrelextrema
-from ipywidgets import FloatSlider
-from scipy.optimize import leastsq
-from IPython.display import display
 from matplotlib import pyplot
 
 

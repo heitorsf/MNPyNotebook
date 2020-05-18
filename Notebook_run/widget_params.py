@@ -1,7 +1,4 @@
-import numpy as np
 from IPython.display import display
-from matplotlib import pyplot
-
 import ipywidgets as widgets
 from ipywidgets import FloatSlider, Dropdown, Layout, HBox, RadioButtons
 
@@ -167,16 +164,16 @@ def widget_params_pulse():
     diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
                     description='Dendrite Diameter[$um$]:', 
                     layout = Layout(width= '400px'), style = style)
-    #parameters = widgets.HBox([widgets.VBox([mutype,gama,delay,predur,meddur,posdur,preamp,posamp,ld,diam,gnap,gcal,gks])])
+   
     parameters = widgets.VBox([mutype,gama,delay,predur,meddur,posdur,preamp,posamp,ld,diam,gnap,gcal,gks])
     wp = {'mutype':mutype,'gama': gama, 'delay':delay,'predur': predur,'meddur': meddur,'posdur': posdur,'preamp': preamp,'posamp':posamp,'ld':ld,'diam':diam, 'gnap':gnap, 'gcal':gcal, 'gks':gks}
-    #for i in parameters.children[0].children:
+
     for i in parameters.children:
         i.layout = widgets.Layout(width= '400px')
         i.style = style
         i.continuous_update = False
     return parameters,wp
-    #return [mutype,gama,delay,predur,meddur,posdur,preamp,posamp,ld,diam,gnap,gcal,gks]
+ 
     
 def widget_params_interact_manual_pulse():
 
@@ -286,7 +283,7 @@ def widget_params_triangular():
     
     parameters = widgets.VBox([mutype,gama,delay,predur,posdur,posamp,possamp,ld,diam,gnap,gcal,gks])
     wp = {'mutype':mutype,'gama': gama, 'delay':delay,'predur': predur,'posdur': posdur,'posamp': posamp,'possamp':possamp,'ld':ld,'diam':diam, 'gnap':gnap, 'gcal':gcal, 'gks':gks}
-    #for i in parameters.children[0].children:
+
     for i in parameters.children:
         i.layout = widgets.Layout(width= '390px')
         i.style = style
