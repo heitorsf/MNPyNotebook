@@ -3,7 +3,7 @@
 
 <p style='text-align: justify;'> The objective of this study is to propose an interactive Jupyter notebook as a computational alternative to simulate how the MN firing properties are influenced by changes in monoaminergic drive and, biophysical and morphological MN characteristics. The proposed model also allows studies related to amyotrophic lateral sclerosis (ALS), since increases in L-type calcium conductances (gCaL) are observed during the progression of this disease and are related to MN bistability. A monoaminergic decrease observed in patients with spinal cord injury can also be simulated, consisting of another example of the exploration with this tool.</p>
 
-The developed interactive model utilizes Jupyter Notebook with the NEURON simulator in Python and the environment can be easily set through Docker (which is an open source containerizing tool).
+The developed interactive model utilizes Jupyter Notebook with the NEURON simulator in Python and the environment can be easily set through Docker (which is an open source containerizing tool) or through MyBinder.
 
 ## Using Docker environment
 
@@ -37,6 +37,15 @@ If you are using a Linux machine, use:
                                     $ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:cbeb_2020
 
 Follow the link that will be prompted on the screen.
+
+### Using MyBinder environment
+
+If you can use the tool with another online environment, please access the link:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/CBEB_2020/master)
+
+And insert the follow line under the first import to compile the mechanisms: 
+
+$ !nrnivmodl
 
 ## Using the tool
 
