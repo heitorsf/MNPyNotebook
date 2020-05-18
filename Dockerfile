@@ -7,15 +7,12 @@ COPY jupyter_notebook_config.py /etc/jupyter/
 COPY Notebook_run/* /work/Notebook_run/
 COPY requirements.txt /work/config/
 
-RUN pip install -r config/requirements.txt \
-    python /work/nrn-7.4/src/nrnpython/setup.py install \
-    chown -R neuron /work \
-    cd /work/Notebook_run \
-    nrnivmodl \
-    jupyter nbextension enable --py widgetsnbextension --sys-prefix
+RUN pip install -r config/requirements.txt
+RUN python /work/nrn-7.4/src/nrnpython/setup.py install
+RUN chown -R neuron /work
+RUN nrnivmodl /work/Notebook_run
+RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 EXPOSE 8888
 USER neuron
 CMD jupyter notebook
-
-
