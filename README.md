@@ -38,12 +38,12 @@ If you are using a Linux machine, use:
 
 Follow the link that will be prompted on the screen.
 
-## Using MyBinder environment
+### 3) Using MyBinder environment
 
 If you can use the tool with another online environment, please access the link:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/CBEB_2020/master)
 
-And insert the follow line under the first import to compile the mechanisms: 
+And uncomment the follow line under the first import to compile the mechanisms: 
 
                                      !nrnivmodl
 
