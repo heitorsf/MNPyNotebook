@@ -30,18 +30,18 @@ Please select and copy the characters after 'token='. Then, click at the 8888 li
 
 If you have installed Docker in your computer, run locally the following line in a command terminal:
 
-                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:MNPyNotebook
+                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
 
 If you are using a Linux machine, use:
 
-                                    $ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:MNPyNotebook
+                                    $ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
 
 Follow the link that will be prompted on the screen.
 
 ### 3) Using MyBinder environment
 
 If you want to use the tool with another online environment, please access the link:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/MNPyNotebook/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/mnpynotebook/master)
 
 And uncomment the following line under the first import to compile the mechanisms: 
 
