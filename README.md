@@ -43,13 +43,14 @@ Follow the link that will be prompted on the screen.
 If you want to use the tool with another online environment, please access the link:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/mnpynotebook/master)
 
-And uncomment the following line under the first import to compile the mechanisms: 
-
-                                     !nrnivmodl
 
 ## Using the tool
 
-Once in the Jupyter Notebook, please enter the folder "Notebook_run" and run the script (**MNPyNotebook.ipynb**). You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
+Once in the Jupyter Notebook, please enter the folder "Notebook_run" and run the script (**MNPyNotebook.ipynb**). If you want to use the tool with MyBinder, uncomment the following line to compile the mechanisms: 
+
+                                     !nrnivmodl
+
+You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
 
 
 ## Usability survey
