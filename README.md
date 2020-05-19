@@ -18,7 +18,7 @@ First of all, we give you two options for using docker:
 
 If you are using the Docker Lab Environment, add a new instance and run the following line in the terminal:
 
-                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:MNPyNotebook
+                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
 
 Wait until it is done and a link will be prompted at the terminal, it will look like this:
 
