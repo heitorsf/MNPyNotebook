@@ -41,7 +41,7 @@ Follow the link that will be prompted on the screen.
 ### 3) Using MyBinder environment
 
 If you want to use the tool with another online environment, please access the link:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/CBEB_2020/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/MNPyNotebook/master)
 
 And uncomment the following line under the first import to compile the mechanisms: 
 
