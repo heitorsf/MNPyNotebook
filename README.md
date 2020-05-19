@@ -1,57 +1,50 @@
-# An interactive tool to study motor neuron electrophysiology aspects at healthy and at disease conditions 
+# An interactive Python notebook to study motor neuron electrophysiology in healthy and diseased conditions
 
+<p style='text-align: justify;'> The objective of this project is to provide an interactive Jupyter notebook as an aid to investigate how MN firing properties are influenced by changes in MN morphological and electrotonic properties, as well as the intensity of monoaminergic drive (which regulates the magnitude of persistent inward currents). The proposed tool can also be used to investigate neurological diseases that affect the MN electrophysiology. For instance, it is known that MN morphology changes during the progression of amyotrophic lateral sclerosis (ALS), thereby influencing the electrophysiological responses of the cell. Also, increased MN excitability, which is observed in ALS and spinal cord injuries, can be simulated by changing the magnitude of persistent currents and monoaminergic drice. Therefore, the proposed interactive notebook can be used in MN neurophysiology research and as an educational tool.</p>
 
-<p style='text-align: justify;'> The objective of this study is to propose an interactive Jupyter notebook as a computational alternative to simulate how the MN firing properties are influenced by changes in monoaminergic drive and, biophysical and morphological MN characteristics. The proposed model also allows studies related to amyotrophic lateral sclerosis (ALS), since increases in L-type calcium conductances (gCaL) are observed during the progression of this disease and are related to MN bistability. A monoaminergic decrease observed in patients with spinal cord injury can also be simulated, consisting of another example of the exploration with this tool.</p>
-
-The developed interactive model utilizes Jupyter Notebook with the NEURON simulator in Python and the environment can be easily set through Docker (which is an open source containerizing tool) or through MyBinder.
+The Jupyter notebook was coded in Python programming language and the libraries of the NEURON simulator. The environment can be easily set up on [Docker](https://www.docker.com/) or [MyBinder](https://mybinder.org/).
 
 ## Using Docker environment
 
-First of all, we give you two options for using docker:
+You might use Docker in two different modes:
 
- * Installing Docker in your computer following the instructions presented at the Docker website:
-      https://docs.docker.com/engine/install/
- * Don't install anything and use the online Docker Lab Environment:
-      https://labs.play-with-docker.com/#
+1. Install Docker on your computer. Please, follow the [instructions](https://docs.docker.com/engine/install/) presented at the Docker website.
+2. Use the online [Docker Lab Environment](https://labs.play-with-docker.com/#).
 
-### 1) With Docker Lab Environment
+### 1) Running on your own computer
 
-If you are using the Docker Lab Environment, add a new instance and run the following line in the terminal:
+If you choose to install the Docker on your computer, you can run the notebook typing the following line on your terminal:
 
-                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
+```
+$ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
+```
 
-Wait until it is done and a link will be prompted at the terminal, it will look like this:
+If you are using a Unix OS, the following code should be used:
 
-http://localhost:8888/?token=95c53108298f4fb7e6af53cf3fac1b3afd09d
-
-Please select and copy the characters after 'token='. Then, click at the 8888 link that will appear on the top of the page. This will open another page and at "Password or token" just paste the token you copied. Click at login. 
-
-### 2) With Docker installation
-
-If you have installed Docker in your computer, run locally the following line in a command terminal:
-
-                                    $ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
-
-If you are using a Linux machine, use:
-
-                                    $ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
+```
+$ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
+```
 
 Follow the link that will be prompted on the screen.
 
-### 3) Using MyBinder environment
+### 2) Running on Docker Lab Environment
 
-If you want to use the tool with another online environment, please access the link:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/mnpynotebook/master)
+If you are using the Docker Lab Environment, add a new instance and run the following code on the terminal:
+```
+$ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
+```
 
+Wait until the virtual installation is complete and a link will be prompted at the terminal. Copy the characters after 'token=' and click on the "8888" link that will appear at the top of the page. Another page will open, and you should paste the token on the field "Password or token". Click on "login" to be redirected to the notebook.
 
-## Using the tool
+## Using MyBinder environment
 
-Once in the Jupyter Notebook, please enter the folder "Notebook_run" and run the script (**MNPyNotebook.ipynb**). If you want to use the tool with MyBinder, uncomment the following line to compile the mechanisms: 
+The notebook can also be accessed on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deboramatoso/mnpynotebook/master).
 
-                                     !nrnivmodl
+## Using the interactive notebook
 
-You will observe the outputs after clicking the "Run interact" buttons. You can modify the values of the widgets to observe other scenarios interesting for you.
+Once you enter the Jupyter environment, select the folder "Notebook_run" and run the script (**MNPyNotebook.ipynb**). If you want to use the notebook with the MyBinder environment, uncomment the line `!nrnivmodl` to compile the Neuron mechanisms.
 
+You will get the model outputs after clicking on "Run interact" buttons. You can modify model and input parameters with the widgets to observe other scenarios. Please, feel free to explore the tool at your leisure.
 
-## Usability survey
-To finish your experience with the tool, if it is comfortable for you, please take a short test and answer the survey to help us understanding the usability of the interactive tool developed: https://docs.google.com/forms/d/e/1FAIpQLSewYiuRmT3B4MQd9LP9WRLqW_YjXODcE8oNQ5yBcn8wdMK2Ag/viewform
+## Survey
+We prepared a brief (anonymous) survey in order to assess your experience with the tool. Please, help us to improve our project by filling the [form](https://docs.google.com/forms/d/e/1FAIpQLSewYiuRmT3B4MQd9LP9WRLqW_YjXODcE8oNQ5yBcn8wdMK2Ag/viewform).
