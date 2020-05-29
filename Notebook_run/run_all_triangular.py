@@ -119,35 +119,34 @@ pyplot.rc('ytick', labelsize=15)
 pyplot.rc('axes', labelsize=15)
 
 
-f, axarr = pyplot.subplots(4, figsize=(7, 7))
+f, axarr = pyplot.subplots(4, figsize=(7, 8))
 
-axarr[0].plot(maxima_time[1:], freq,'black', linewidth=1,label='freq (Hz)')
-axarr[1].plot(t_vec, v_vec,'black', linewidth=1, label='potential (mV) - %s type' % mutype)
-axarr[2].plot(t_vec, i_vec, 'black', label='applied current (nA)', linewidth=2.0)     
-axarr[3].plot(maxima_current[1:],freq, 'black')
-
-
-axarr[0].set_xlim([0,15020])
+axarr[0].plot(maxima_current[1:],freq, 'black')
+axarr[1].plot(maxima_time[1:], freq,'black', linewidth=1,label='freq (Hz)')
+axarr[2].plot(t_vec, v_vec,'black', linewidth=1, label='potential (mV) - %s type' % mutype)
+axarr[3].plot(t_vec, i_vec, 'black', label='applied current (nA)', linewidth=2.0) 
 
 
-axarr[0].set_ylabel('Firing rate (Hz)', fontsize = 15)
-axarr[1].set_ylabel('Vs (mV)', fontsize = 15)
-axarr[2].set_ylabel('Current (nA)', fontsize = 15)
-axarr[3].set_ylabel('Firing rate (Hz)',fontsize=15)
+axarr[1].set_xlim([0,15020])
 
-axarr[2].set_xlabel('Time (ms)', fontsize = 15)
-axarr[3].set_xlabel('Current (nA)',fontsize=15)
+axarr[0].set_ylabel('Firing rate (Hz)',fontsize=15)
+axarr[1].set_ylabel('Firing rate (Hz)', fontsize = 15)
+axarr[2].set_ylabel('Vs (mV)', fontsize = 15)
+axarr[3].set_ylabel('Current (nA)', fontsize = 15)
+
+axarr[0].set_xlabel('Current (nA)',fontsize=15)
+axarr[3].set_xlabel('Time (ms)', fontsize = 15)
 
 
 axarr[0].grid(b=True)
 axarr[1].grid(b=True)
-axarr[2].grid()
-axarr[3].grid()
+axarr[2].grid(b=True)
+axarr[3].grid(b=True)
 axarr[0].tick_params(labelsize=15)
 axarr[1].tick_params(labelsize=15)
 axarr[2].tick_params(labelsize=15)
 axarr[3].tick_params(labelsize=15)
-pyplot.tight_layout(0.1)
+pyplot.tight_layout(rect=(0,0,1,.98))
 
 frequency = freq[-1]-freq[0]
 current=maxima_current[-1]-maxima_current[0]
