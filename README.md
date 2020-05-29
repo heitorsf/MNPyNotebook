@@ -6,14 +6,12 @@ The Jupyter notebook was coded in Python programming language and the libraries 
 
 ## Using Docker environment
 
-You might use Docker in two different modes:
+You might use Docker after install Docker on your computer. Please, follow the [instructions](https://docs.docker.com/engine/install/) presented at the Docker website.
 
-1. Install Docker on your computer. Please, follow the [instructions](https://docs.docker.com/engine/install/) presented at the Docker website.
-2. Use the online [Docker Lab Environment](https://labs.play-with-docker.com/#).
 
-### 1) Running on your own computer
+### Running on your own computer
 
-If you choose to install the Docker on your computer, you can run the notebook typing the following line on your terminal:
+After install the Docker on your computer, you can run the notebook typing the following line on your terminal:
 
 ```
 $ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
@@ -27,14 +25,6 @@ $ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
 
 Follow the link that will be prompted on the screen.
 
-### 2) Running on Docker Lab Environment
-
-If you are using the Docker Lab Environment, add a new instance and run the following code on the terminal:
-```
-$ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
-```
-
-Wait until the virtual installation is complete and a link will be prompted at the terminal. Copy the characters after 'token=' and click on the "8888" link that will appear at the top of the page. Another page will open, and you should paste the token on the field "Password or token". Click on "login" to be redirected to the notebook.
 
 ## Using MyBinder environment
 
