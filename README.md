@@ -38,3 +38,6 @@ You will get the model outputs after clicking on "Run interact" buttons. You can
 
 ## Survey
 We prepared a brief (anonymous) survey in order to assess your experience with the tool. Please, help us to improve our project by filling the [form](https://docs.google.com/forms/d/e/1FAIpQLSewYiuRmT3B4MQd9LP9WRLqW_YjXODcE8oNQ5yBcn8wdMK2Ag/viewform).
+
+## Funding
+DECM is a recipient of a PhD scholarship from FAPESP (#2017/11464-9). HSF is a recipient of a PhD scholarship from CAPES (#88882.329427/2019-01). LAE is funded by CNPq Research Grants (#409302/2016-3 and #312442/2017-3).
