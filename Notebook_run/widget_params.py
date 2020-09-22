@@ -19,11 +19,11 @@ def widget_interact_manual_current(mode):
 
         mutype = widgets.Dropdown(options = ['S', 'FR', 'FF'], value = 'FF',
                       layout = Layout(width = '400px'),continuous_update = True,
-                      description = 'Motor Neuron Type:', style = style)
+                      description = 'Motor neuron type:', style = style)
 
         gama = widgets.Dropdown(options = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1], value = 1.,
                       layout = Layout(width = '400px'),continuous_update = True,
-                      description = 'Monoamnergic Drive:', style = style)
+                      description = 'Monoaminergic drive:', style = style)
 
         delay = widgets.Dropdown(options = range(0,300,10), value = 290,
                       layout = Layout(width = '400px'),continuous_update = True,
@@ -50,11 +50,11 @@ def widget_interact_manual_current(mode):
                         layout = Layout(width= '400px'), style = style)
 
         ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                        description='Dendrite Lenght [$mm$]:', 
+                        description='Dendrite lenght [$mm$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
-                        description='Dendrite Diameter [$um$]:', 
+                        description='Dendrite diameter [$um$]:', 
                         layout = Layout(width= '400px'), style = style)
         return [mutype,gama,delay,predur,meddur,posdur,preamp,posamp,ld,diam,gnap,gcal,gks]
     
@@ -129,11 +129,11 @@ def widget_params_pulse():
 
     mutype = widgets.Dropdown(options = ['S', 'FR', 'FF'], value = 'FF',
                   layout = Layout(width = '400px'),continuous_update = True,
-                  description = 'Motor Neuron Type:', style = style)
+                  description = 'Motor neuron type:', style = style)
 
     gama = widgets.Dropdown(options = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1], value = 1.,
                   layout = Layout(width = '400px'),continuous_update = True,
-                  description = 'Monoamnergic Drive:', style = style)
+                  description = 'Monoaminergic drive:', style = style)
 
     delay = widgets.Dropdown(options = range(0,300,10), value = 290,
                   layout = Layout(width = '400px'),continuous_update = True,
@@ -160,11 +160,11 @@ def widget_params_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite Lenght [$mm$]:', 
+                    description='Dendrite lenght [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
-                    description='Dendrite Diameter [$um$]:', 
+                    description='Dendrite diameter [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
    
     parameters = widgets.VBox([mutype,gama,delay,predur,meddur,posdur,preamp,posamp,ld,diam,gnap,gcal,gks])
@@ -194,11 +194,11 @@ def widget_params_interact_manual_pulse():
 
     mutype = widgets.Dropdown(options = ['S', 'FR', 'FF'], value = 'FF',
                   layout = Layout(width = '400px'),continuous_update = True,
-                  description = 'Motor Neuron Type:', style = style)
+                  description = 'Motor neuron type:', style = style)
 
     gama = widgets.Dropdown(options = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1], value = 1.,
                   layout = Layout(width = '400px'),continuous_update = True,
-                  description = 'Monoamnergic Drive:', style = style)
+                  description = 'Monoaminergic drive:', style = style)
 
     delay = widgets.Dropdown(options = range(0,300,10), value = 290,
                   layout = Layout(width = '400px'),continuous_update = True,
@@ -225,11 +225,11 @@ def widget_params_interact_manual_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite Lenght [$mm$]:', 
+                    description='Dendrite lenght [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
-                    description='Dendrite Diameter [$um$]:', 
+                    description='Dendrite diameter [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
     return [mutype,gama,delay,predur,meddur,posdur,preamp,posamp,ld,diam,gnap,gcal,gks]
 
@@ -358,11 +358,11 @@ def widget_action_potential():
 
     mutype = widgets.Dropdown(options = ['S', 'FR', 'FF'], value = 'FF',
                   layout = Layout(width = '400px'),continuous_update = True,
-                  description = 'Motor Neuron Type:', style = style)
+                  description = 'Motor neuron type:', style = style)
 
     gama = widgets.Dropdown(options = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1], value = 0.2,
                   layout = Layout(width = '400px'),continuous_update = True,
-                  description = 'Monoamnergic Drive:', style = style)
+                  description = 'Monoaminergic drive:', style = style)
 
     delay = widgets.Dropdown(options = range(0,300,10), value = 20,
                   layout = Layout(width = '400px'),continuous_update = True,
@@ -377,10 +377,10 @@ def widget_action_potential():
                     layout = Layout(width= '400px'), style = style)
     
     ld= widgets.FloatSlider(value = 9350, min = 1000, max = 25000,
-                    description='Dendrite Lenght [$mm$]:', 
+                    description='Dendrite lenght [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 88, min = 10, max = 300,
-                    description='Dendrite Diameter [$um$]:', 
+                    description='Dendrite diameter [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
     return [mutype,gama,delay,dur,amp,ld,diam,gnap,gcal,gks]
