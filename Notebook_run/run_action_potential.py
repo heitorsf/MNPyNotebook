@@ -230,8 +230,5 @@ axarr5.grid()
 pyplot.tight_layout(0.1)
 
 spikes=len(spikes)
-import pandas as pd
-df2 = pd.DataFrame({'frequency':np.mean(freq),
-                    'spikes':[spikes]})
-df2.to_csv('action_potential_results.csv', index=False)
+
 pyplot.savefig('action_potential.png')
