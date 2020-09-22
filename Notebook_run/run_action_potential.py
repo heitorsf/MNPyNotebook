@@ -229,6 +229,4 @@ axarr5.grid()
 
 pyplot.tight_layout(0.1)
 
-spikes=len(spikes)
-
 pyplot.savefig('action_potential.png')
