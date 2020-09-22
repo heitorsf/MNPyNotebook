@@ -130,24 +130,25 @@ pyplot.rc('axes', labelsize=15)
 
 f, axarr = pyplot.subplots(3, sharex=True,figsize=(7, 7))
 
-axarr[2].plot(t_vec, i_vec, 'black', label='applied current (nA)', linewidth=2.0)
-axarr[1].plot(t_vec, v_vec,'black', linewidth=1, label='potential (mV) - %s type' % mutype)
-axarr[0].plot(maxima_time[1:], freq,'black', linewidth=1,label='freq (Hz)')
 
+axarr[0].plot(maxima_time[1:], freq,'black', linewidth=1,label='freq (Hz)')
+axarr[0].set_ylabel('Firing Rate (Hz)',rotation=90)
 axarr[0].grid()
+
+axarr[1].plot(t_vec, v_vec,'black', linewidth=1, label='potential (mV) - %s type' % mutype)
+axarr[1].set_ylabel('Vs (mV)',rotation=90)
 axarr[1].grid()
+
+axarr[2].plot(t_vec, i_vec, 'black', label='applied current (nA)', linewidth=2.0)
+axarr[2].set_ylabel('Current (nA)',rotation=90)
 axarr[2].grid()
 
-axarr[2].set_ylabel('Current(nA)',rotation=90)
-axarr[1].set_ylabel('Vs(mV)',rotation=90)
-axarr[0].set_ylabel('Firing Rate(Hz)',rotation=90)
-
-pyplot.xlabel('Time(ms)')
+pyplot.xlabel('Time (ms)')
 pyplot.tight_layout(0.1)
 
 spikes=len(spikes)
 import pandas as pd
 df2 = pd.DataFrame({'frequency':np.mean(freq),
                     'spikes':[spikes]})
-df2.to_csv('pulse_injection.csv', index=False)
+df2.to_csv('pulse_injection_results.csv', index=False)
 pyplot.savefig('pulse_injection.png')

@@ -38,7 +38,7 @@ soma = nrn.h.Section()
 dend = nrn.h.Section()
 
 i_vec = nrn.h.Vector()
-v_vec = nrn.h.Vector()             # Membrane potential vector
+v_vec = nrn.h.Vector()             
 v_vecs = nrn.h.Vector()
 t_vec = nrn.h.Vector()
 
