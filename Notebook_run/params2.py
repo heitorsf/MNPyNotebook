@@ -90,11 +90,10 @@ class params_init(object):
         
         import subprocess
         
-        subprocess.check_output('ipython run_action_potential.py'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.dur)+' '+str(self.amp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks),stderr=subprocess.STDOUT, shell=True)
-        try:
-            print(stderr)
-        except:
-            pass
+        os_out=os.system('ipython run_action_potential.py'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.dur)+' '+str(self.amp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks))
+      
+        if os_out !=0:
+            print('ERRO no os.system',os_out)
         
         display(Image(filename='action_potential.png'))
      
