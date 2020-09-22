@@ -97,7 +97,6 @@ icaL_vec.record(dend(0.5)._ref_icaL)
 ina_vec.record(soma(0.5)._ref_ina)
 inaf_vec.record(soma(0.5)._ref_inaf_napp)
 inap_vec.record(soma(0.5)._ref_inap_napp)
-#ik_vec.record(soma(0.5)._ref_ik_napp)
 iks_vec.record(soma(0.5)._ref_iks_napp)
 ikf_vec.record(soma(0.5)._ref_ikf_napp)
 
@@ -194,7 +193,7 @@ axarr4.set_ylabel('Vd (mV)',rotation=90)
 axarr4.set_xlim(18,40)
 
 axarr5.set_xlabel('Time(ms)')
-axarr5.set_ylabel('mA/cm²', color = 'b')
+axarr5.set_ylabel(u'$mA/cm^2$', color = 'b')
 
 for t1 in axarr5.get_yticklabels():
     t1.set_color('b')
@@ -208,11 +207,13 @@ for t1 in ax2.get_yticklabels():
 axarr5.plot(t_vec, icaL_vec, linewidth=1,label=u'ICaL ($mA/cm^2$)',color='b')
 axarr5.set_xlabel('Time (ms)')
 axarr5.set_ylabel(u'Ionic Current ($mA/cm^2$)',rotation=90,color='b')
+axarr5.set_xlim(18,40)
 axarr5.legend (loc = 1) #best
 
 ax2.plot(t_vec, gcal_vec*1e3, linewidth=1,label=u'gCaL ($mS/cm^2$)',color='r')
 ax2.set_xlabel('Time (ms)')
 ax2.set_ylabel(u'Ionic Conductance ($mS/cm^2$)',rotation=90,color='r')
+ax2.set_xlim(18,40)
 ax2.legend (loc = 'center')#4
 
 
