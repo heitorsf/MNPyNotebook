@@ -150,5 +150,5 @@ spikes=len(spikes)
 import pandas as pd
 df2 = pd.DataFrame({'frequency':np.mean(freq),
                     'spikes':[spikes]})
-df2.to_csv('pulse_injection_results.csv', index=False)
+df2.to_csv('pulse.csv', index=False)
 pyplot.savefig('pulse_injection.png')

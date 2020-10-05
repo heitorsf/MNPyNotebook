@@ -155,5 +155,5 @@ import pandas as pd
 df2 = pd.DataFrame({'delta_f':frequency,
                     'delta_i':current,
                     'spikes':[spikes]})
-df2.to_csv('triangular_injection_results.csv', index=False)
+df2.to_csv('triangle.csv', index=False)
 pyplot.savefig('triangular_injection.png')

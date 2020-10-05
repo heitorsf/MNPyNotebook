@@ -10,7 +10,7 @@ def widget_interact_manual_current(mode):
                         layout = Layout(width= '400px'), style = style)
 
         gcal= widgets.FloatSlider(value = 0.0172, min = 0.0001, max = 0.062,
-                        description='Calcium type-L conductance [$mS/cm^2$]:', 
+                        description='L-type calcium conductance [$mS/cm^2$]:', 
                         layout = Layout(width= '400px'), style = style, readout_format='.4f')
 
         gnap= widgets.FloatSlider(value = 1.91, min = 0.1, max = 3,
@@ -50,7 +50,7 @@ def widget_interact_manual_current(mode):
                         layout = Layout(width= '400px'), style = style)
 
         ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                        description='Dendrite lenght [$mm$]:', 
+                        description='Dendrite length [$mm$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
@@ -100,7 +100,7 @@ def widget_interact_manual_current(mode):
                         layout = Layout(width= '400px'), style = style)
 
         ld= FloatSlider(value = 12049, min = 1000, max = 25000,
-                        description='Dendrite lenght [$mm$]:', 
+                        description='Dendrite length [$mm$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         diam= FloatSlider(value = 93, min = 10, max = 300,
@@ -120,7 +120,7 @@ def widget_params_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     gcal= widgets.FloatSlider(value = 0.0172, min = 0.0001, max = 0.062,
-                    description='Calcium type-L conductance [$mS/cm^2$]:', 
+                    description='L-type calcium conductance [$mS/cm^2$]:', 
                     layout = Layout(width= '400px'), style = style, readout_format='.4f')
 
     gnap= widgets.FloatSlider(value = 1.91, min = 0.0001, max = 3,
@@ -160,7 +160,7 @@ def widget_params_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite lenght [$mm$]:', 
+                    description='Dendrite length [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
@@ -185,7 +185,7 @@ def widget_params_interact_manual_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     gcal= widgets.FloatSlider(value = 0.0172, min = 0.0001, max = 1.0000,
-                    description='Calcium type-L conductance [$mS/cm^2$]:', 
+                    description='L-type calcium conductance [$mS/cm^2$]:', 
                     layout = Layout(width= '400px'), style = style, readout_format='.4f')
 
     gnap= widgets.FloatSlider(value = 1.91, min = 0.1, max = 3,
@@ -225,7 +225,7 @@ def widget_params_interact_manual_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite lenght [$mm$]:', 
+                    description='Dendrite length [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
@@ -276,7 +276,7 @@ def widget_params_triangular():
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite lenght [$mm$]:', 
+                    description='Dendrite length [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam= FloatSlider(value = 93, min = 10, max = 300,
@@ -334,7 +334,7 @@ def widget_interact_manual_triangular():
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite lenght [$mm$]:', 
+                    description='Dendrite length [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam= FloatSlider(value = 93, min = 10, max = 300,
@@ -349,7 +349,7 @@ def widget_action_potential():
                     layout = Layout(width= '400px'), style = style)
 
     gcal= widgets.FloatSlider(value = 0.0062, min = 0.0001, max = 1.0000,
-                    description='Calcium type-L conductance [$mS/cm^2$]:', 
+                    description='L-type calcium conductance [$mS/cm^2$]:', 
                     layout = Layout(width= '400px'), style = style, readout_format='.4f')
 
     gnap= widgets.FloatSlider(value = 0.65, min = 0.1, max = 3,
@@ -377,7 +377,7 @@ def widget_action_potential():
                     layout = Layout(width= '400px'), style = style)
     
     ld= widgets.FloatSlider(value = 9350, min = 1000, max = 25000,
-                    description='Dendrite lenght [$mm$]:', 
+                    description='Dendrite length [$mm$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 88, min = 10, max = 300,
