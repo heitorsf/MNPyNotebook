@@ -148,8 +148,12 @@ axarr[2].tick_params(labelsize=15)
 axarr[3].tick_params(labelsize=15)
 pyplot.tight_layout(rect=(0,0,1,.98))
 
-frequency = freq[-1]-freq[0]
-current=maxima_current[-1]-maxima_current[0]
+if len(freq)==0:
+   frequency = 0
+   current = 0
+else:
+   frequency = freq[-1]-freq[0]
+   current = maxima_current[-1]-maxima_current[0]
 spikes=len(spikes)
 import pandas as pd
 df2 = pd.DataFrame({'delta_f':frequency,

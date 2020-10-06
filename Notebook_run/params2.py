@@ -50,6 +50,7 @@ class params_init(object):
         self.posdur = posdur
         self.preamp = preamp
         self.posamp = posamp
+        self.gama = gama        
         self.ld = ld
         self.diam = diam
         self.gnap = gnap*1e-3
@@ -62,7 +63,7 @@ class params_init(object):
     def params_triangular(self):
 
 
-        os_out=os.system('ipython run_all_triangular.py'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.predur)+' '+str(self.posdur)+' '+str(self.posamp)+' '+str(self.possamp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks))
+        os_out=os.system('ipython run_all_triangular.py --'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.predur)+' '+str(self.posdur)+' '+str(self.posamp)+' '+str(self.possamp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks))
       
         if os_out !=0:
             print('ERRO no os.system',os_out)
@@ -90,7 +91,7 @@ class params_init(object):
         
         import subprocess
         
-        os_out=os.system('ipython run_action_potential.py'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.dur)+' '+str(self.amp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks))
+        os_out=os.system('ipython run_action_potential.py --'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.dur)+' '+str(self.amp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks))
       
         if os_out !=0:
             print('ERRO no os.system',os_out)
@@ -122,7 +123,7 @@ class params_init(object):
             
         if mode == 'triangular':
            
-            os_out=os.system('ipython run_all_triangular.py'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.predur)+' '+str(self.posdur)+' '+str(self.posamp)+' '+str(self.possamp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks))
+            os_out=os.system('ipython run_all_triangular.py --'+' '+str(self.mutype)+' '+str(self.gama)+' '+str(self.delay)+' ' +str(self.predur)+' '+str(self.posdur)+' '+str(self.posamp)+' '+str(self.possamp)+' '+str(self.ld)+' '+str(self.diam)+' '+str(self.gnap)+' '+str(self.gcal)+' '+str(self.gks))
 
             if os_out !=0:
                 print('ERRO no os.system',os_out)
@@ -138,6 +139,7 @@ class params_init(object):
                 self.posdur = posdur
                 self.preamp = preamp
                 self.posamp = posamp
+                self.gama = gama
                 self.ld = ld
                 self.diam = diam
                 self.gnap = gnap*1e-3
