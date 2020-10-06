@@ -84,19 +84,20 @@ def widget_interact_manual_current(mode):
                       layout = Layout(width = '400px'),continuous_update = True,
                       description = 'Injected current delay [$ms$]:', style = style)
 
-        predur= FloatSlider(value = 3000, min = 0, max = 3000,
-                        description='Ascending triangular current duration [$ms$]:', 
+        posdur= FloatSlider(value = 11250, min = 0, max = 12000,
+                        description='Triangular current duration [$ms$]:', 
                         layout = Layout(width= '400px'), style = style)
 
-        posdur= FloatSlider(value = 11250, min = 0, max = 12000,
-                        description='Descending triangular current duration [$ms$]:', 
+        predur= FloatSlider(value = 3000, min = 0, max = 3000,
+                        description='Peak time [$ms$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         posamp= FloatSlider(value = 20, min = -100, max = 50,
-                        description='Ascending triangular current amplitude [$nA$]:', 
+                        description='Peak amplitude [$nA$]:', 
                         layout = Layout(width= '400px'), style = style)
+
         possamp= FloatSlider(value = 30, min = -100, max = 50,
-                        description='Descending triangular current amplitude [$nA$]:', 
+                        description='Final amplitude [$nA$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         ld= FloatSlider(value = 12049, min = 1000, max = 25000,
@@ -110,7 +111,6 @@ def widget_interact_manual_current(mode):
     else:
         print("mode not found")
 
-        
 
 def widget_params_pulse():
 
@@ -260,19 +260,20 @@ def widget_params_triangular():
                   layout = Layout(width = '400px'),continuous_update = True,
                   description = 'Injected current delay [$ms$]:', style = style)
 
-    predur= FloatSlider(value = 3000, min = 0, max = 5000,
-                    description='Ascending triangular current duration [$ms$]:', 
+   posdur= FloatSlider(value = 11250, min = 0, max = 15000,
+                    description='Triangular current duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
-    posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='Descending triangular current duration [$ms$]:', 
+    predur= FloatSlider(value = 3000, min = 0, max = 5000,
+                    description='Peak time [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
-                    description='Ascending triangular current amplitude [$nA$]:', 
+                    description='Peak amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
+
     possamp= FloatSlider(value = 30, min = -100, max = 50,
-                    description='Descending triangular current amplitude [$nA$]:', 
+                    description='Final amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
@@ -318,19 +319,20 @@ def widget_interact_manual_triangular():
                   layout = Layout(width = '400px'),continuous_update = True,
                   description = 'Injected current delay [$ms$]:', style = style)
 
-    predur= FloatSlider(value = 3000, min = 0, max = 5000,
-                    description='Ascending triangular current duration [$ms$]:', 
+    posdur= FloatSlider(value = 11250, min = 0, max = 15000,
+                    description='Triangular current duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
-    posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='Descending triangular current duration [$ms$]:', 
+    predur= FloatSlider(value = 3000, min = 0, max = 5000,
+                    description='Peak time [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
-                    description='Ascending triangular current amplitude [$nA$]:', 
+                    description='Peak amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
+
     possamp= FloatSlider(value = 30, min = -100, max = 50,
-                    description='Descending triangular current amplitude [$nA$]:', 
+                    description='Final amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
