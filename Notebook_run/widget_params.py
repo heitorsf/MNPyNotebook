@@ -85,18 +85,18 @@ def widget_interact_manual_current(mode):
                       description = 'Injected current delay [$ms$]:', style = style)
 
         predur= FloatSlider(value = 3000, min = 0, max = 3000,
-                        description='Ascending triangular current duration [$ms$]:', 
+                        description='Peak duration [$ms$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         posdur= FloatSlider(value = 11250, min = 0, max = 12000,
-                        description='Descending triangular current duration [$ms$]:', 
+                        description='Triangular current duration [$ms$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         posamp= FloatSlider(value = 20, min = -100, max = 50,
-                        description='Ascending triangular current amplitude [$nA$]:', 
+                        description='Peak amplitude [$nA$]:', 
                         layout = Layout(width= '400px'), style = style)
         possamp= FloatSlider(value = -10, min = -100, max = 50,
-                        description='Descending triangular current amplitude [$nA$]:', 
+                        description='Final amplitude [$nA$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         ld= FloatSlider(value = 12049, min = 1000, max = 25000,
@@ -106,7 +106,7 @@ def widget_interact_manual_current(mode):
         diam= FloatSlider(value = 93, min = 10, max = 300,
                         description='Dendrite diameter [$um$]:', 
                         layout = Layout(width= '400px'), style = style)
-        return [mutype,gama,delay,predur,posdur, posamp, possamp,ld,diam,gnap,gcal,gks]
+        return [mutype,gama,delay,posdur, predur,posamp, possamp,ld,diam,gnap,gcal,gks]
     else:
         print("mode not found")
 
@@ -261,18 +261,18 @@ def widget_params_triangular():
                   description = 'Injected current delay [$ms$]:', style = style)
 
     predur= FloatSlider(value = 3000, min = 0, max = 5000,
-                    description='Ascending triangular current duration [$ms$]:', 
+                    description='Peak duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='Descending triangular current duration [$ms$]:', 
+                    description='Triangular current duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
-                    description='Ascending triangular current amplitude [$nA$]:', 
+                    description='Peak amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
     possamp= FloatSlider(value = -10, min = -100, max = 50,
-                    description='Descending triangular current amplitude [$nA$]:', 
+                    description='Final amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
@@ -283,8 +283,8 @@ def widget_params_triangular():
                     description='Dendrite diameter [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
     
-    parameters = widgets.VBox([mutype,gama,delay,predur,posdur,posamp,possamp,ld,diam,gnap,gcal,gks])
-    wp = {'mutype':mutype,'gama': gama, 'delay':delay,'predur': predur,'posdur': posdur,'posamp': posamp,'possamp':possamp,'ld':ld,'diam':diam, 'gnap':gnap, 'gcal':gcal, 'gks':gks}
+    parameters = widgets.VBox([mutype,gama,delay,posdur,predur,posamp,possamp,ld,diam,gnap,gcal,gks])
+    wp = {'mutype':mutype,'gama': gama, 'delay':delay,'posdur': posdur,'predur': predur,'posamp': posamp,'possamp':possamp,'ld':ld,'diam':diam, 'gnap':gnap, 'gcal':gcal, 'gks':gks}
 
     for i in parameters.children:
         i.layout = widgets.Layout(width= '390px')
@@ -319,18 +319,18 @@ def widget_interact_manual_triangular():
                   description = 'Injected current delay [$ms$]:', style = style)
 
     predur= FloatSlider(value = 3000, min = 0, max = 5000,
-                    description='Ascending triangular current duration [$ms$]:', 
+                    description='Peak duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='Descending triangular current duration [$ms$]:', 
+                    description='Triangular current duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
-                    description='Ascending triangular current amplitude [$nA$]:', 
+                    description='Peak amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
     possamp= FloatSlider(value = -10, min = -100, max = 50,
-                    description='Descending triangular current amplitude [$nA$]:', 
+                    description='Final amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
@@ -340,7 +340,7 @@ def widget_interact_manual_triangular():
     diam= FloatSlider(value = 93, min = 10, max = 300,
                     description='Dendrite diameter [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
-    return [mutype,gama,delay,predur,posdur, posamp, possamp,ld,diam,gnap,gcal,gks]
+    return [mutype,gama,delay,posdur,predur,posamp,possamp,ld,diam,gnap,gcal,gks]
 
 def widget_action_potential(): 
     style = {'description_width': 'initial'}
