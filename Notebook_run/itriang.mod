@@ -42,7 +42,7 @@ BREAKPOINT {
                     i = posamp * (t-del)/predur
                 }else{
 			if (t < del+predur+posdur){
-				i = posamp - (possamp * (t-(del+predur))/posdur)
+				i = posamp - ((posamp-possamp) * (t-(del+predur))/posdur)
                     }
                     else{
                         i = 0
