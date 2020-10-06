@@ -89,7 +89,7 @@ def widget_interact_manual_current(mode):
                         layout = Layout(width= '400px'), style = style)
 
         posdur= FloatSlider(value = 11250, min = 0, max = 12000,
-                        description='Triangular current duration [$ms$]:', 
+                        description='After peak duration [$ms$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         posamp= FloatSlider(value = 20, min = -100, max = 50,
@@ -265,7 +265,7 @@ def widget_params_triangular():
                     layout = Layout(width= '400px'), style = style)
 
     posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='Triangular current duration [$ms$]:', 
+                    description='After peak duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
@@ -323,7 +323,7 @@ def widget_interact_manual_triangular():
                     layout = Layout(width= '400px'), style = style)
 
     posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='Triangular current duration [$ms$]:', 
+                    description='After peak duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
