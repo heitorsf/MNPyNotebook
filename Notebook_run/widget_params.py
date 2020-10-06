@@ -95,7 +95,7 @@ def widget_interact_manual_current(mode):
         posamp= FloatSlider(value = 20, min = -100, max = 50,
                         description='Ascending triangular current amplitude [$nA$]:', 
                         layout = Layout(width= '400px'), style = style)
-        possamp= FloatSlider(value = 30, min = -100, max = 50,
+        possamp= FloatSlider(value = -10, min = -100, max = 50,
                         description='Descending triangular current amplitude [$nA$]:', 
                         layout = Layout(width= '400px'), style = style)
 
@@ -271,7 +271,7 @@ def widget_params_triangular():
     posamp= FloatSlider(value = 20, min = -100, max = 50,
                     description='Ascending triangular current amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
-    possamp= FloatSlider(value = 30, min = -100, max = 50,
+    possamp= FloatSlider(value = -10, min = -100, max = 50,
                     description='Descending triangular current amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
 
@@ -329,7 +329,7 @@ def widget_interact_manual_triangular():
     posamp= FloatSlider(value = 20, min = -100, max = 50,
                     description='Ascending triangular current amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
-    possamp= FloatSlider(value = 30, min = -100, max = 50,
+    possamp= FloatSlider(value = -10, min = -100, max = 50,
                     description='Descending triangular current amplitude [$nA$]:', 
                     layout = Layout(width= '400px'), style = style)
 
