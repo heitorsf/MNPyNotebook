@@ -85,11 +85,11 @@ def widget_interact_manual_current(mode):
                       description = 'Injected current delay [$ms$]:', style = style)
 
         predur= FloatSlider(value = 3000, min = 0, max = 3000,
-                        description='Peak duration [$ms$]:', 
+                        description='Ascending phase duration [$ms$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         posdur= FloatSlider(value = 11250, min = 0, max = 12000,
-                        description='After peak duration [$ms$]:', 
+                        description='Descending phase duration [$ms$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         posamp= FloatSlider(value = 20, min = -100, max = 50,
@@ -260,12 +260,12 @@ def widget_params_triangular():
                   layout = Layout(width = '400px'),continuous_update = True,
                   description = 'Injected current delay [$ms$]:', style = style)
 
-    predur= FloatSlider(value = 3000, min = 0, max = 5000,
-                    description='Peak duration [$ms$]:', 
+    predur= FloatSlider(value = 3000, min = 0, max = 3000,
+                    description='Ascending phase duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
-    posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='After peak duration [$ms$]:', 
+    posdur= FloatSlider(value = 11250, min = 0, max = 12000,
+                    description='Descending phase duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
@@ -318,12 +318,12 @@ def widget_interact_manual_triangular():
                   layout = Layout(width = '400px'),continuous_update = True,
                   description = 'Injected current delay [$ms$]:', style = style)
 
-    predur= FloatSlider(value = 3000, min = 0, max = 5000,
-                    description='Peak duration [$ms$]:', 
+    predur= FloatSlider(value = 3000, min = 0, max = 3000,
+                    description='Ascending phase duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
-    posdur= FloatSlider(value = 11250, min = 0, max = 15000,
-                    description='After peak duration [$ms$]:', 
+    posdur= FloatSlider(value = 11250, min = 0, max = 12000,
+                    description='Descending phase duration [$ms$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     posamp= FloatSlider(value = 20, min = -100, max = 50,
