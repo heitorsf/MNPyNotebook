@@ -14,13 +14,13 @@ You might use Docker after install Docker on your computer. Please, follow the [
 After install the Docker on your computer, you can run the notebook typing the following line on your terminal:
 
 ```
-$ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
+$ docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook_v03
 ```
 
 If you are using a Unix OS, the following code should be used:
 
 ```
-$ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook
+$ sudo docker run -it -p 8888:8888 28102018/decm_first_repo:mnpynotebook_v03
 ```
 
 Follow the link that will be prompted on the screen.
