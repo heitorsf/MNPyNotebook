@@ -106,7 +106,7 @@ def widget_interact_manual_current(mode):
         diam= FloatSlider(value = 93, min = 10, max = 300,
                         description='Dendrite diameter [$um$]:', 
                         layout = Layout(width= '400px'), style = style)
-        return [mutype,gama,delay,posdur, predur,posamp, possamp,ld,diam,gnap,gcal,gks]
+        return [mutype,gama,delay,predur,posdur,posamp, possamp,ld,diam,gnap,gcal,gks]
     else:
         print("mode not found")
 
@@ -283,7 +283,7 @@ def widget_params_triangular():
                     description='Dendrite diameter [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
     
-    parameters = widgets.VBox([mutype,gama,delay,posdur,predur,posamp,possamp,ld,diam,gnap,gcal,gks])
+    parameters = widgets.VBox([mutype,gama,delay,predur,posdur,posamp,possamp,ld,diam,gnap,gcal,gks])
     wp = {'mutype':mutype,'gama': gama, 'delay':delay,'posdur': posdur,'predur': predur,'posamp': posamp,'possamp':possamp,'ld':ld,'diam':diam, 'gnap':gnap, 'gcal':gcal, 'gks':gks}
 
     for i in parameters.children:
@@ -340,7 +340,7 @@ def widget_interact_manual_triangular():
     diam= FloatSlider(value = 93, min = 10, max = 300,
                     description='Dendrite diameter [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
-    return [mutype,gama,delay,posdur,predur,posamp,possamp,ld,diam,gnap,gcal,gks]
+    return [mutype,gama,delay,predur,posdur,posamp,possamp,ld,diam,gnap,gcal,gks]
 
 def widget_action_potential(): 
     style = {'description_width': 'initial'}
