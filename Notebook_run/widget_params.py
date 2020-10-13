@@ -50,7 +50,7 @@ def widget_interact_manual_current(mode):
                         layout = Layout(width= '400px'), style = style)
 
         ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                        description='Dendrite length [$mm$]:', 
+                        description='Dendrite length [$um$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
@@ -100,7 +100,7 @@ def widget_interact_manual_current(mode):
                         layout = Layout(width= '400px'), style = style)
 
         ld= FloatSlider(value = 12049, min = 1000, max = 25000,
-                        description='Dendrite length [$mm$]:', 
+                        description='Dendrite length [$um$]:', 
                         layout = Layout(width= '400px'), style = style)
 
         diam= FloatSlider(value = 93, min = 10, max = 300,
@@ -160,7 +160,7 @@ def widget_params_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite length [$mm$]:', 
+                    description='Dendrite length [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
@@ -225,7 +225,7 @@ def widget_params_interact_manual_pulse():
                     layout = Layout(width= '400px'), style = style)
 
     ld= widgets.FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite length [$mm$]:', 
+                    description='Dendrite length [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 93, min = 10, max = 300,
@@ -276,7 +276,7 @@ def widget_params_triangular():
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite length [$mm$]:', 
+                    description='Dendrite length [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam= FloatSlider(value = 93, min = 10, max = 300,
@@ -334,7 +334,7 @@ def widget_interact_manual_triangular():
                     layout = Layout(width= '400px'), style = style)
 
     ld= FloatSlider(value = 12049, min = 1000, max = 25000,
-                    description='Dendrite length [$mm$]:', 
+                    description='Dendrite length [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam= FloatSlider(value = 93, min = 10, max = 300,
@@ -377,7 +377,7 @@ def widget_action_potential():
                     layout = Layout(width= '400px'), style = style)
     
     ld= widgets.FloatSlider(value = 9350, min = 1000, max = 25000,
-                    description='Dendrite length [$mm$]:', 
+                    description='Dendrite length [$um$]:', 
                     layout = Layout(width= '400px'), style = style)
 
     diam = widgets.FloatSlider(value = 88, min = 10, max = 300,
