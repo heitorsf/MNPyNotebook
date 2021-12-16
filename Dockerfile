@@ -6,6 +6,7 @@ USER root
 COPY jupyter_notebook_config.py /etc/jupyter/
 COPY Notebook_run/* /work/Notebook_run/
 COPY requirements.txt /work/config/
+COPY runtime.txt /work/
 
 RUN pip install -r config/requirements.txt
 RUN cd /work/nrn-7.4/src/nrnpython \
