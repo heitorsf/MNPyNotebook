@@ -1,3 +1,3 @@
 pandas
 ipywidgets
-python==3
+python
