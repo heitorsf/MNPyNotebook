@@ -1,6 +1,16 @@
 FROM dmiyamoto/neuron:jupyter
 MAINTAINER DeboraMatoso
 WORKDIR /work
+ARG NB_USER=neuron
+ARG NB_UID=1000
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
+RUN adduser --disabled-password \
+    --gecos "Default user" \
+    --uid ${NB_UID} \
+    ${NB_USER}
 USER root
 
 COPY jupyter_notebook_config.py /etc/jupyter/
@@ -13,6 +23,8 @@ RUN cd /work/nrn-7.4/src/nrnpython \
 RUN chown -R neuron /work
 RUN cd /work/Notebook_run \ 
     nrnivmodl
+RUN pip install --no-cache-dir notebook
+RUN pip install --no-cache-dir jupyterhub
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 EXPOSE 8888
