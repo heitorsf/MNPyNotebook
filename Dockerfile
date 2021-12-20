@@ -20,7 +20,6 @@ RUN chown -R neuron /work
 RUN cd /work/Notebook_run \ 
     nrnivmodl
 RUN pip install --no-cache-dir notebook
-RUN pip install --no-cache-dir jupyterhub
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 EXPOSE 8888
