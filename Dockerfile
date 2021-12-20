@@ -7,11 +7,12 @@ ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 
+USER root
+
 RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
     ${NB_USER}
-USER root
 
 COPY jupyter_notebook_config.py /etc/jupyter/
 COPY Notebook_run/* /work/Notebook_run/
