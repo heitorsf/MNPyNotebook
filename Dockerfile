@@ -22,6 +22,11 @@ RUN cd /work/Notebook_run \
 RUN pip install --no-cache-dir notebook
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
+COPY . ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
+
 EXPOSE 8888
 USER neuron
 CMD jupyter notebook
